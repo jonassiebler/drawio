@@ -1,120 +1,124 @@
-<mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-  <root>
-    <mxCell id="0"/>
-    <mxCell id="1" parent="0"/>
-    <mxCell id="2" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
-      <mxGeometry x="60" y="40" width="30" height="60" as="geometry"/>
-    </mxCell>
-    <mxCell id="3" value="Client Application" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-      <mxGeometry x="180" y="40" width="120" height="60" as="geometry"/>
-    </mxCell>
-    <mxCell id="4" value="Server" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-      <mxGeometry x="380" y="40" width="120" height="60" as="geometry"/>
-    </mxCell>
-    <mxCell id="5" value="Cloud Storage" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" vertex="1" parent="1">
-      <mxGeometry x="580" y="30" width="120" height="80" as="geometry"/>
-    </mxCell>
-    <mxCell id="6" value="" style="endArrow=none;dashed=1;html=1;rounded=1;" edge="1" parent="1">
-      <mxGeometry width="50" height="50" relative="1" as="geometry">
-        <mxPoint x="74.5" y="620" as="sourcePoint"/>
-        <mxPoint x="74.5" y="120" as="targetPoint"/>
-      </mxGeometry>
-    </mxCell>
-    <mxCell id="7" value="" style="endArrow=none;dashed=1;html=1;rounded=1;" edge="1" parent="1">
-      <mxGeometry width="50" height="50" relative="1" as="geometry">
-        <mxPoint x="239.5" y="620" as="sourcePoint"/>
-        <mxPoint x="239.5" y="120" as="targetPoint"/>
-      </mxGeometry>
-    </mxCell>
-    <mxCell id="8" value="" style="endArrow=none;dashed=1;html=1;rounded=1;" edge="1" parent="1">
-      <mxGeometry width="50" height="50" relative="1" as="geometry">
-        <mxPoint x="439.5" y="620" as="sourcePoint"/>
-        <mxPoint x="439.5" y="120" as="targetPoint"/>
-      </mxGeometry>
-    </mxCell>
-    <mxCell id="9" value="" style="endArrow=none;dashed=1;html=1;rounded=1;" edge="1" parent="1">
-      <mxGeometry width="50" height="50" relative="1" as="geometry">
-        <mxPoint x="639.5" y="620" as="sourcePoint"/>
-        <mxPoint x="639.5" y="120" as="targetPoint"/>
-      </mxGeometry>
-    </mxCell>
-    <mxCell id="10" value="Initiate file upload" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
-      <mxGeometry width="50" height="50" relative="1" as="geometry">
-        <mxPoint x="80" y="160" as="sourcePoint"/>
-        <mxPoint x="230" y="160" as="targetPoint"/>
-      </mxGeometry>
-    </mxCell>
-    <mxCell id="11" value="Prepare file" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
-      <mxGeometry width="50" height="50" relative="1" as="geometry">
-        <mxPoint x="250" y="180" as="sourcePoint"/>
-        <mxPoint x="250" y="210" as="targetPoint"/>
-        <Array as="points">
-          <mxPoint x="280" y="180"/>
-          <mxPoint x="280" y="210"/>
-        </Array>
-      </mxGeometry>
-    </mxCell>
-    <mxCell id="12" value="Request upload URL" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
-      <mxGeometry width="50" height="50" relative="1" as="geometry">
-        <mxPoint x="250" y="240" as="sourcePoint"/>
-        <mxPoint x="430" y="240" as="targetPoint"/>
-      </mxGeometry>
-    </mxCell>
-    <mxCell id="13" value="Generate signed URL" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
-      <mxGeometry width="50" height="50" relative="1" as="geometry">
-        <mxPoint x="450" y="260" as="sourcePoint"/>
-        <mxPoint x="450" y="290" as="targetPoint"/>
-        <Array as="points">
-          <mxPoint x="480" y="260"/>
-          <mxPoint x="480" y="290"/>
-        </Array>
-      </mxGeometry>
-    </mxCell>
-    <mxCell id="14" value="Return signed URL" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
-      <mxGeometry width="50" height="50" relative="1" as="geometry">
-        <mxPoint x="430" y="320" as="sourcePoint"/>
-        <mxPoint x="250" y="320" as="targetPoint"/>
-      </mxGeometry>
-    </mxCell>
-    <mxCell id="15" value="Upload file using signed URL" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
-      <mxGeometry width="50" height="50" relative="1" as="geometry">
-        <mxPoint x="250" y="360" as="sourcePoint"/>
-        <mxPoint x="630" y="360" as="targetPoint"/>
-      </mxGeometry>
-    </mxCell>
-    <mxCell id="16" value="Confirm upload" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
-      <mxGeometry width="50" height="50" relative="1" as="geometry">
-        <mxPoint x="630" y="400" as="sourcePoint"/>
-        <mxPoint x="250" y="400" as="targetPoint"/>
-      </mxGeometry>
-    </mxCell>
-    <mxCell id="17" value="Notify successful upload" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
-      <mxGeometry width="50" height="50" relative="1" as="geometry">
-        <mxPoint x="250" y="440" as="sourcePoint"/>
-        <mxPoint x="430" y="440" as="targetPoint"/>
-      </mxGeometry>
-    </mxCell>
-    <mxCell id="18" value="Verify and process upload" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
-      <mxGeometry width="50" height="50" relative="1" as="geometry">
-        <mxPoint x="450" y="460" as="sourcePoint"/>
-        <mxPoint x="450" y="490" as="targetPoint"/>
-        <Array as="points">
-          <mxPoint x="480" y="460"/>
-          <mxPoint x="480" y="490"/>
-        </Array>
-      </mxGeometry>
-    </mxCell>
-    <mxCell id="19" value="Confirm completion" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
-      <mxGeometry width="50" height="50" relative="1" as="geometry">
-        <mxPoint x="430" y="520" as="sourcePoint"/>
-        <mxPoint x="250" y="520" as="targetPoint"/>
-      </mxGeometry>
-    </mxCell>
-    <mxCell id="20" value="File upload complete" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
-      <mxGeometry width="50" height="50" relative="1" as="geometry">
-        <mxPoint x="230" y="560" as="sourcePoint"/>
-        <mxPoint x="80" y="560" as="targetPoint"/>
-      </mxGeometry>
-    </mxCell>
-  </root>
-</mxGraphModel>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" version="24.7.6">
+  <diagram id="y0jdcXiXWJCj_qAPHeTJ" name="Seite-1">
+    <mxGraphModel dx="956" dy="601" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="40" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Client Application" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="180" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Server" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="380" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Cloud Storage" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="" style="endArrow=none;dashed=1;html=1;rounded=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="74.5" y="620" as="sourcePoint" />
+            <mxPoint x="74.5" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7" value="" style="endArrow=none;dashed=1;html=1;rounded=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="239.5" y="620" as="sourcePoint" />
+            <mxPoint x="239.5" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8" value="" style="endArrow=none;dashed=1;html=1;rounded=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="439.5" y="620" as="sourcePoint" />
+            <mxPoint x="439.5" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" value="" style="endArrow=none;dashed=1;html=1;rounded=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="639.5" y="620" as="sourcePoint" />
+            <mxPoint x="639.5" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" value="Initiate file upload" style="endArrow=classic;html=1;rounded=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="160" as="sourcePoint" />
+            <mxPoint x="230" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" value="Prepare file" style="endArrow=classic;html=1;rounded=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="180" as="sourcePoint" />
+            <mxPoint x="250" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="180" />
+              <mxPoint x="280" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="Request upload URL" style="endArrow=classic;html=1;rounded=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="240" as="sourcePoint" />
+            <mxPoint x="430" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="Generate signed URL" style="endArrow=classic;html=1;rounded=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="260" as="sourcePoint" />
+            <mxPoint x="450" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="480" y="260" />
+              <mxPoint x="480" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="Return signed URL" style="endArrow=classic;html=1;rounded=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="320" as="sourcePoint" />
+            <mxPoint x="250" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="Upload file using signed URL" style="endArrow=classic;html=1;rounded=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="360" as="sourcePoint" />
+            <mxPoint x="630" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="Confirm upload" style="endArrow=classic;html=1;rounded=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="400" as="sourcePoint" />
+            <mxPoint x="250" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="Notify successful upload" style="endArrow=classic;html=1;rounded=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="440" as="sourcePoint" />
+            <mxPoint x="430" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" value="Verify and process upload" style="endArrow=classic;html=1;rounded=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="460" as="sourcePoint" />
+            <mxPoint x="450" y="490" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="480" y="460" />
+              <mxPoint x="480" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" value="Confirm completion" style="endArrow=classic;html=1;rounded=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="520" as="sourcePoint" />
+            <mxPoint x="250" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" value="File upload complete" style="endArrow=classic;html=1;rounded=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="560" as="sourcePoint" />
+            <mxPoint x="80" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
