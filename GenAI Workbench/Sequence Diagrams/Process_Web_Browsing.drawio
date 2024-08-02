@@ -1,0 +1,98 @@
+<mxGraphModel dx="956" dy="601" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="2" value="User" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="40" y="40" width="100" height="600" as="geometry" />
+    </mxCell>
+    <mxCell id="3" value="Browser" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="200" y="40" width="100" height="600" as="geometry" />
+    </mxCell>
+    <mxCell id="4" value="DNS Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+      <mxGeometry x="360" y="40" width="100" height="600" as="geometry" />
+    </mxCell>
+    <mxCell id="5" value="Web Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};rounded=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="520" y="40" width="100" height="600" as="geometry" />
+    </mxCell>
+    <mxCell id="6" value="Enter URL" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;" edge="1" parent="1" source="2" target="3">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="95" y="120" as="sourcePoint" />
+        <Array as="points">
+          <mxPoint x="180" y="120" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="7" value="DNS Request" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;" edge="1" parent="1" source="3" target="4">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="255" y="160" as="sourcePoint" />
+        <Array as="points">
+          <mxPoint x="340" y="160" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="8" value="IP Address" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;" edge="1" parent="1" source="4" target="3">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="255" y="200" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="340" y="200" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="9" value="TCP Connection" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;" edge="1" parent="1" source="3" target="5">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="255" y="240" as="sourcePoint" />
+        <Array as="points">
+          <mxPoint x="420" y="240" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="10" value="Connection Accepted" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;" edge="1" parent="1" source="5" target="3">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="255" y="280" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="420" y="280" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="11" value="HTTP GET Request" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;" edge="1" parent="1" source="3" target="5">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="255" y="320" as="sourcePoint" />
+        <Array as="points">
+          <mxPoint x="420" y="320" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="12" value="HTTP Response (HTML)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;" edge="1" parent="1" source="5" target="3">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="255" y="400" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="420" y="400" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="13" value="Request Additional Resources" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;" edge="1" parent="1" source="3" target="5">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="255" y="480" as="sourcePoint" />
+        <Array as="points">
+          <mxPoint x="420" y="480" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="14" value="Send Resources" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;" edge="1" parent="1" source="5" target="3">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="255" y="520" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="420" y="520" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="15" value="Render Web Page" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;" edge="1" parent="1" source="3" target="2">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="95" y="560" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="180" y="560" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+  </root>
+</mxGraphModel>
